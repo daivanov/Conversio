@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+   "-//Hibernate/Hibernate Mapping DTD//EN"
+   "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+
+<hibernate-mapping>
+   <class name="conversio.Numeral" table="NUMERALS">
+      <meta attribute="class-description">
+           This class contains the employee detail.
+      </meta>
+      <id name="id" column="id">
+           <generator class="increment"/>
+      </id>
+      <property name="decimalNumeral" column="decimal_numeral" type="integer"/>
+      <property name="romanNumeral" column="roman_numeral" type="string"/>
+      <property name="timestamp" column="time_stamp" type="timestamp"/>
+  </class>
+</hibernate-mapping>

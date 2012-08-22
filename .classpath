@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/usr/share/java/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/slf4j-simple.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/antlr.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/hsqldb.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/javassist.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/dom4j.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/geronimo-jta_1.1_spec.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/commons-collections3.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/geronimo-jpa-2.0-spec.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
