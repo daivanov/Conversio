@@ -13,7 +13,7 @@
 
    <!-- Assume test is the database name -->
    <property name="hibernate.connection.url">
-      jdbc:hsqldb:file:numerals
+      jdbc:hsqldb:file:numerals;shutdown=true
    </property>
    <property name="hibernate.connection.username">
       sa
