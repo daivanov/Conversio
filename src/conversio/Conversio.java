@@ -33,6 +33,9 @@ public class Conversio {
         Conversio c = new Conversio();
         Romanizer romanizer = new Romanizer();
 
+    	/* List down all the numerals */
+        c.listNumerals();
+
         /* Add few numeral records in database */
         try {
         	Long numID1 = c.addNumeral(10,
@@ -95,9 +98,9 @@ public class Conversio {
             List<Numeral> numerals = session.createQuery("FROM Numeral").list();
             for (Iterator<Numeral> iterator = numerals.iterator(); iterator.hasNext(); ){
                 Numeral numeral = iterator.next();
-                System.out.print("Decimal: " + numeral.getDecimalNumeral());
-                System.out.print(" Roman  : " + numeral.getRomanNumeral());
-                System.out.println(" Timestamp: " + numeral.getTimestamp());
+                System.out.print("Decimal:\t" + numeral.getDecimalNumeral());
+                System.out.print("\tRoman:\t" + numeral.getRomanNumeral());
+                System.out.println("\tTimestamp: " + numeral.getTimestamp());
             }
             tx.commit();
         } catch (HibernateException e) {
@@ -114,7 +117,6 @@ public class Conversio {
     * @param  NumeralID  id of the row 
     * @param  timestamp  new timestamp to be saved in the row
     */
-    /* Method to UPDATE salary for an numeral */
     public void updateNumeral(Long NumeralID, Date timestamp) {
         Session session = factory.openSession();
         Transaction tx = null;

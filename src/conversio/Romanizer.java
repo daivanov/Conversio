@@ -8,7 +8,7 @@ import java.util.Hashtable;
  *
  * @author: Daniil Ivanov
  */
-class Romanizer {
+public class Romanizer {
     private Hashtable<Integer, Character> map = new Hashtable<Integer, Character>(7);
 
     /**
